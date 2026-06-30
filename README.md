@@ -8,7 +8,7 @@ A lightweight, non-AI background removal tool for anime-style images with known 
 
 Despite using **zero AI models**, our method consistently produces cleaner alpha mattes on anime images — especially at semi-transparent edges, fine line art, and anti-aliased boundaries where RMBG-2.0 tends to over-smooth or introduce artifacts.
 
-| Scenario | Input | SimpleAnimeBGRemover | RMBG-2.0 | Original Size | Threshold | Border width |
+| Scenario | Input | Ours | RMBG-2.0 | Original Size | Threshold | Border width |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | White BG | ![input-white-bg](assets/input_white.jpg) | ![ours-white](assets/ours_white.jpg) | ![rmbg-white](assets/rmbg_white.jpg) | 160 x 160 | 0.0375 | 2 |
 | Red BG | ![input-red-bg](assets/input_red.jpg) | ![ours-red-full](assets/ours_red.jpg) | ![rmbg-red](assets/rmbg_red.jpg) | 320 x 320 | 0.2 | 2 |
