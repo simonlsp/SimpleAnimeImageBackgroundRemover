@@ -157,7 +157,7 @@ def parse_bg_color(value: str) -> list[int]:
         raise argparse.ArgumentTypeError(
             f"bg_color must be three comma-separated integers, e.g. '255,255,255', got: '{value}'"
         )
-    return [int(p.strip()) for p in parts]
+    return [int(p.strip()) for p in parts][::-1] # RGB to BGR
 
 
 if __name__ == "__main__":
